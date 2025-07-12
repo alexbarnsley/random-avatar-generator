@@ -19,39 +19,29 @@ export class AvatarGenerator {
   /** @description Generates random avatar image URL
    * @returns Random avatar image URL
    */
-  generateRandomAvatar(seed?: string) {
+  generateRandomAvatar(seed?: string): string {
+    const urlOptions = {
+      accessoriesType: this.getRandomOption(this.options.accessoriesTypeOptions, seed),
+      avatarStyle: 'Circle',
+      clotheColor: this.getRandomOption(this.options.clotheColorOptions, seed),
+      clotheType: this.getRandomOption(this.options.clotheTypeOptions, seed),
+      eyeType: this.getRandomOption(this.options.eyeTypeOptions, seed),
+      eyebrowType: this.getRandomOption(this.options.eyebrowTypeOptions, seed),
+      facialHairColor: this.getRandomOption(this.options.facialHairColorOptions, seed),
+      facialHairType: this.getRandomOption(this.options.facialHairTypeOptions, seed),
+      hairColor: this.getRandomOption(this.options.hairColorTypes, seed),
+      hatColor: this.getRandomOption(this.options.hatColorOptions, seed),
+      mouthType: this.getRandomOption(this.options.mouthTypeOptions, seed),
+      skinColor: this.getRandomOption(this.options.skinColorOptions, seed),
+      topType: this.getRandomOption(this.options.topTypeOptions, seed),
+    }
+
+    return `https://avataaars.io/?${new URLSearchParams(urlOptions)}`;
+  }
+
+  getRandomOption(options: string[], seed?: string): string {
     const rng = seed ? seedrandom(seed) : seedrandom();
 
-    return `https://avataaars.io/?accessoriesType=${
-      this.options.accessoriesTypeOptions[
-        Math.floor(rng() * this.options.accessoriesTypeOptions.length)
-      ]
-    }&avatarStyle=Circle&clotheColor=${
-      this.options.clotheColorOptions[Math.floor(rng() * this.options.clotheColorOptions.length)]
-    }&clotheType=${
-      this.options.clotheTypeOptions[Math.floor(rng() * this.options.clotheTypeOptions.length)]
-    }&eyeType=${
-      this.options.eyeTypeOptions[Math.floor(rng() * this.options.eyeTypeOptions.length)]
-    }&eyebrowType=${
-      this.options.eyebrowTypeOptions[Math.floor(rng() * this.options.eyebrowTypeOptions.length)]
-    }&facialHairColor=${
-      this.options.facialHairColorOptions[
-        Math.floor(rng() * this.options.facialHairColorOptions.length)
-      ]
-    }&facialHairType=${
-      this.options.facialHairTypeOptions[
-        Math.floor(rng() * this.options.facialHairTypeOptions.length)
-      ]
-    }&hairColor=${
-      this.options.hairColorTypes[Math.floor(rng() * this.options.hairColorTypes.length)]
-    }&hatColor=${
-      this.options.hatColorOptions[Math.floor(rng() * this.options.hatColorOptions.length)]
-    }&mouthType=${
-      this.options.mouthTypeOptions[Math.floor(rng() * this.options.mouthTypeOptions.length)]
-    }&skinColor=${
-      this.options.skinColorOptions[Math.floor(rng() * this.options.skinColorOptions.length)]
-    }&topType=${
-      this.options.topTypeOptions[Math.floor(rng() * this.options.topTypeOptions.length)]
-    }`;
+    return options[Math.floor(rng() * options.length)];
   }
 }

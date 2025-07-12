@@ -33,7 +33,7 @@ export const topTypeOptions = [
     "ShortHairShortWaved",
     "ShortHairSides",
     "ShortHairTheCaesar",
-    "ShortHairTheCaesarSidePart"
+    "ShortHairTheCaesarSidePart",
 ];
 
 export const accessoriesTypeOptions = [
@@ -43,7 +43,7 @@ export const accessoriesTypeOptions = [
     "Prescription02",
     "Round",
     "Sunglasses",
-    "Wayfarers"
+    "Wayfarers",
 ];
 
 export const facialHairTypeOptions = [
@@ -52,7 +52,7 @@ export const facialHairTypeOptions = [
     "BeardLight",
     "BeardMagestic",
     "MoustacheFancy",
-    "MoustacheMagnum"
+    "MoustacheMagnum",
 ];
 
 export const facialHairColorOptions = [
@@ -63,7 +63,7 @@ export const facialHairColorOptions = [
     "Brown",
     "BrownDark",
     "Platinum",
-    "Red"
+    "Red",
 ];
 
 export const clotheTypeOptions = [
@@ -75,7 +75,7 @@ export const clotheTypeOptions = [
     "Overall",
     "ShirtCrewNeck",
     "ShirtScoopNeck",
-    "ShirtVNeck"
+    "ShirtVNeck",
 ];
 
 export const eyeTypeOptions = [
@@ -90,7 +90,7 @@ export const eyeTypeOptions = [
     "Squint",
     "Surprised",
     "Wink",
-    "WinkWacky"
+    "WinkWacky",
 ];
 
 export const eyebrowTypeOptions = [
@@ -105,7 +105,7 @@ export const eyebrowTypeOptions = [
     "SadConcernedNatural",
     "UnibrowNatural",
     "UpDown",
-    "UpDownNatural"
+    "UpDownNatural",
 ];
 
 export const mouthTypeOptions = [
@@ -120,7 +120,7 @@ export const mouthTypeOptions = [
     "Smile",
     "Tongue",
     "Twinkle",
-    "Vomit"
+    "Vomit",
 ];
 
 export const skinColorOptions = [
@@ -130,7 +130,7 @@ export const skinColorOptions = [
     "Light",
     "Brown",
     "DarkBrown",
-    "Black"
+    "Black",
 ];
 
 export const hairColorTypes = [
@@ -143,7 +143,7 @@ export const hairColorTypes = [
     "PastelPink",
     "Platinum",
     "Red",
-    "SilverGray"
+    "SilverGray",
 ];
 
 export const hatColorOptions = [
@@ -161,7 +161,7 @@ export const hatColorOptions = [
     "PastelYellow",
     "Pink",
     "Red",
-    "White"
+    "White",
 ];
 
 export const clotheColorOptions = [
@@ -179,7 +179,7 @@ export const clotheColorOptions = [
     "PastelYellow",
     "Pink",
     "Red",
-    "White"
+    "White",
 ];
 
 export default {

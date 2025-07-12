@@ -20,28 +20,28 @@ export class AvatarGenerator {
    * @returns Random avatar image URL
    */
   generateRandomAvatar(seed?: string, avatarStyle: 'Circle' | 'Transparent' = 'Circle'): string {
+    const rng = seed ? seedrandom(seed) : seedrandom();
+
     const urlOptions = {
-      accessoriesType: this.getRandomOption(this.options.accessoriesTypeOptions, seed),
+      accessoriesType: this.getRandomOption(rng, this.options.accessoriesTypeOptions),
       avatarStyle,
-      clotheColor: this.getRandomOption(this.options.clotheColorOptions, seed),
-      clotheType: this.getRandomOption(this.options.clotheTypeOptions, seed),
-      eyeType: this.getRandomOption(this.options.eyeTypeOptions, seed),
-      eyebrowType: this.getRandomOption(this.options.eyebrowTypeOptions, seed),
-      facialHairColor: this.getRandomOption(this.options.facialHairColorOptions, seed),
-      facialHairType: this.getRandomOption(this.options.facialHairTypeOptions, seed),
-      hairColor: this.getRandomOption(this.options.hairColorTypes, seed),
-      hatColor: this.getRandomOption(this.options.hatColorOptions, seed),
-      mouthType: this.getRandomOption(this.options.mouthTypeOptions, seed),
-      skinColor: this.getRandomOption(this.options.skinColorOptions, seed),
-      topType: this.getRandomOption(this.options.topTypeOptions, seed),
+      clotheColor: this.getRandomOption(rng, this.options.clotheColorOptions),
+      clotheType: this.getRandomOption(rng, this.options.clotheTypeOptions),
+      eyeType: this.getRandomOption(rng, this.options.eyeTypeOptions),
+      eyebrowType: this.getRandomOption(rng, this.options.eyebrowTypeOptions),
+      facialHairColor: this.getRandomOption(rng, this.options.facialHairColorOptions),
+      facialHairType: this.getRandomOption(rng, this.options.facialHairTypeOptions),
+      hairColor: this.getRandomOption(rng, this.options.hairColorTypes),
+      hatColor: this.getRandomOption(rng, this.options.hatColorOptions),
+      mouthType: this.getRandomOption(rng, this.options.mouthTypeOptions),
+      skinColor: this.getRandomOption(rng, this.options.skinColorOptions),
+      topType: this.getRandomOption(rng, this.options.topTypeOptions),
     }
 
     return `https://avataaars.io/?${new URLSearchParams(urlOptions)}`;
   }
 
-  getRandomOption(options: string[], seed?: string): string {
-    const rng = seed ? seedrandom(seed) : seedrandom();
-
+  getRandomOption(rng: seedrandom.prng, options: string[]): string {
     return options[Math.floor(rng() * options.length)];
   }
 }

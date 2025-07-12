@@ -7,9 +7,9 @@ export class AvatarGenerator {
   options: Record<string, string[]>;
 
   constructor(options: IGenerateOptions = {}) {
-    this.options = { ...defaultOptions, ...options };
+    this.options = { ...defaultOptions };
 
-    for (const [key, value] of Object.entries(this.options)) {
+    for (const [key, value] of Object.entries(options)) {
       if (Array.isArray(value) && value.length > 0) {
         this.options[key] = value;
       }

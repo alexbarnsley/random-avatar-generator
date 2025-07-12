@@ -1,14 +1,14 @@
 export interface IGenerateOptions {
-    topTypeOptions?: string[];
-    accessoriesTypeOptions?: string[];
-    facialHairTypeOptions?: string[];
-    facialHairColorOptions?: string[];
-    clotheTypeOptions?: string[];
-    eyeTypeOptions?: string[];
-    eyebrowTypeOptions?: string[];
-    mouthTypeOptions?: string[];
-    skinColorOptions?: string[];
+    topType?: string[];
+    accessoriesType?: string[];
+    facialHairType?: string[];
+    facialHairColor?: string[];
+    clotheType?: string[];
+    eyeType?: string[];
+    eyebrowType?: string[];
+    mouthType?: string[];
+    skinColor?: string[];
     hairColorTypes?: string[];
-    hatColorOptions?: string[];
-    clotheColorOptions?: string[];
+    hatColor?: string[];
+    clotheColor?: string[];
 }

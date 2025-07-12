@@ -1,4 +1,4 @@
-export const topTypeOptions = [
+export const topType = [
     "NoHair",
     "Eyepatch",
     "Hat",
@@ -36,7 +36,7 @@ export const topTypeOptions = [
     "ShortHairTheCaesarSidePart",
 ];
 
-export const accessoriesTypeOptions = [
+export const accessoriesType = [
     "Blank",
     "Kurt",
     "Prescription01",
@@ -46,7 +46,7 @@ export const accessoriesTypeOptions = [
     "Wayfarers",
 ];
 
-export const facialHairTypeOptions = [
+export const facialHairType = [
     "Blank",
     "BeardMedium",
     "BeardLight",
@@ -55,7 +55,7 @@ export const facialHairTypeOptions = [
     "MoustacheMagnum",
 ];
 
-export const facialHairColorOptions = [
+export const facialHairColor = [
     "Auburn",
     "Black",
     "Blonde",
@@ -66,7 +66,7 @@ export const facialHairColorOptions = [
     "Red",
 ];
 
-export const clotheTypeOptions = [
+export const clotheType = [
     "BlazerShirt",
     "BlazerSweater",
     "CollarSweater",
@@ -78,7 +78,7 @@ export const clotheTypeOptions = [
     "ShirtVNeck",
 ];
 
-export const eyeTypeOptions = [
+export const eyeType = [
     "Close",
     "Cry",
     "Default",
@@ -93,7 +93,7 @@ export const eyeTypeOptions = [
     "WinkWacky",
 ];
 
-export const eyebrowTypeOptions = [
+export const eyebrowType = [
     "Angry",
     "AngryNatural",
     "Default",
@@ -108,7 +108,7 @@ export const eyebrowTypeOptions = [
     "UpDownNatural",
 ];
 
-export const mouthTypeOptions = [
+export const mouthType = [
     "Concerned",
     "Default",
     "Disbelief",
@@ -123,7 +123,7 @@ export const mouthTypeOptions = [
     "Vomit",
 ];
 
-export const skinColorOptions = [
+export const skinColor = [
     "Tanned",
     "Yellow",
     "Pale",
@@ -146,7 +146,7 @@ export const hairColorTypes = [
     "SilverGray",
 ];
 
-export const hatColorOptions = [
+export const hatColor = [
     "Black",
     "Blue01",
     "Blue02",
@@ -164,7 +164,7 @@ export const hatColorOptions = [
     "White",
 ];
 
-export const clotheColorOptions = [
+export const clotheColor = [
     "Black",
     "Blue01",
     "Blue02",
@@ -183,16 +183,16 @@ export const clotheColorOptions = [
 ];
 
 export default {
-    topTypeOptions,
-    accessoriesTypeOptions,
-    facialHairTypeOptions,
-    facialHairColorOptions,
-    clotheTypeOptions,
-    eyeTypeOptions,
-    eyebrowTypeOptions,
-    mouthTypeOptions,
-    skinColorOptions,
+    topType,
+    accessoriesType,
+    facialHairType,
+    facialHairColor,
+    clotheType,
+    eyeType,
+    eyebrowType,
+    mouthType,
+    skinColor,
     hairColorTypes,
-    hatColorOptions,
-    clotheColorOptions,
+    hatColor,
+    clotheColor,
 }

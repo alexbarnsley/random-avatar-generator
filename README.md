@@ -23,14 +23,14 @@ You can also choose to remove certain options. For example:
 
 ```typescript
 const generator = new AvatarGenerator({
-    "mouthType": [
-        "Default",
-        "Grimace",
-        "ScreamOpen",
-        "Smile",
-        "Tongue",
-        "Twinkle",
-    ],
+  "mouthType": [
+    "Default",
+    "Grimace",
+    "ScreamOpen",
+    "Smile",
+    "Tongue",
+    "Twinkle",
+  ],
 });
 ```
 

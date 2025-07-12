@@ -19,10 +19,10 @@ export class AvatarGenerator {
   /** @description Generates random avatar image URL
    * @returns Random avatar image URL
    */
-  generateRandomAvatar(seed?: string): string {
+  generateRandomAvatar(seed?: string, avatarStyle: 'Circle' | 'Transparent' = 'Circle'): string {
     const urlOptions = {
       accessoriesType: this.getRandomOption(this.options.accessoriesTypeOptions, seed),
-      avatarStyle: 'Circle',
+      avatarStyle,
       clotheColor: this.getRandomOption(this.options.clotheColorOptions, seed),
       clotheType: this.getRandomOption(this.options.clotheTypeOptions, seed),
       eyeType: this.getRandomOption(this.options.eyeTypeOptions, seed),
